@@ -1,0 +1,198 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class Atm
+{
+
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("choose the choice: 1 2 3 ");
+        int ch = sc.nextInt();
+        int acc_no=0,pin_no,acc_bal=0;
+    String acc_holder;
+    if(acc_no==101)
+    {
+    acc_bal =25234 ;
+        
+    }
+    if(acc_no==102)
+    {
+        acc_bal = 34123;
+        
+    }
+    if(acc_no==103)
+    {
+        acc_bal = 26100;
+       
+    }
+    if(acc_no==104)
+    {
+   
+        acc_bal = 80000;
+    }
+    if(acc_no==105)
+    {
+        acc_bal = 103400;
+    }
+        while(true){
+        switch(ch)
+        {
+        case 1:
+        int value=0;
+        System.out.println("ENTER NUMBER OF NOTES IN 2000");
+        int number1 = sc .nextInt();
+         value = value+(2000  * number1);
+         System.out.println("ENTER NUMBER OF NOTES IN 500");
+            int number2 = sc.nextInt();
+         value = value+(500 * number2);
+         System.out.println("ENTER NUMBER OF NOTES IN 100");
+        int number3 = sc.nextInt();
+         value = value+(100 * number3);
+         System.out.println(value);
+         break;
+        case 2 :
+       
+           acc_no=101;
+                acc_holder= "Suresh";
+        pin_no = 2343;
+        acc_bal = 25234;
+        System.out.println(acc_no+" "+acc_holder+" "+pin_no+" "+acc_bal);
+       
+        acc_no=102;
+        acc_holder= "Ganesh";
+        pin_no = 5432;
+        acc_bal = 34123;
+        System.out.println(acc_no+" "+acc_holder+" "+pin_no+" "+acc_bal);
+        acc_no=103;
+        acc_holder= "Magesh";
+        pin_no = 7854;
+        acc_bal = 26100;
+        System.out.println(acc_no+" "+acc_holder+" "+pin_no+" "+acc_bal);
+        acc_no=104;
+        acc_holder= "Naresh";
+        pin_no = 2345;
+        acc_bal = 80000;
+        System.out.println(acc_no+" "+acc_holder+" "+pin_no+" "+acc_bal);
+          acc_no=105;
+         acc_holder= "Harish";
+        pin_no = 1907;
+        acc_bal = 103400;
+        System.out.println(acc_no+" "+acc_holder+" "+pin_no+" "+acc_bal);
+        if(acc_no==101)
+        {
+        acc_holder= "Suresh";
+            pin_no = 2343;
+            acc_bal = 25234;
+        }
+        if(acc_no==102)
+        {
+        acc_holder= "Ganesh";
+            pin_no = 5432;
+            acc_bal = 34123;
+        }
+        if(acc_no==103)
+        {
+        acc_holder= "Magesh";
+            pin_no = 7854;
+            acc_bal = 26100;
+        }
+        if(acc_no==104)
+        {
+        acc_holder= "Naresh";
+            pin_no = 2345;
+            acc_bal = 80000;
+        }
+        if(acc_no==105)
+        {
+        acc_holder= "Harish";
+            pin_no = 1907;
+            acc_bal = 103400;
+        }
+        break;
+        case 3:
+        System.out.println("enter the choice 1 2 3 4");
+        int a = sc.nextInt();
+        switch(a)
+        {
+        case 1:
+        System.out.println("enter ur account no :");
+        if(acc_no==101)
+        {
+        acc_bal =25234 ;
+            System.out.println(acc_bal);
+        }
+        if(acc_no==102)
+        {
+            acc_bal = 34123;
+            System.out.println(acc_bal);
+        }
+        if(acc_no==103)
+        {
+            acc_bal = 26100;
+            System.out.println(acc_bal);
+        }
+        if(acc_no==104)
+        {
+       
+            acc_bal = 80000;
+            System.out.println(acc_bal);
+        }
+        if(acc_no==105)
+        {
+            acc_bal = 103400;
+            System.out.println(acc_bal);
+        }
+        break;
+        case 2:
+        	System.out.println("enter money to withdrawl :");
+        	int money = sc .nextInt();
+        	System.out.println("enter your account number :");
+        	acc_no = sc .nextInt();
+        	
+        	if(acc_no==101)
+            {
+            acc_bal =25234 ;
+                
+            }
+            if(acc_no==102)
+            {
+                acc_bal = 34123;
+                
+            }
+            if(acc_no==103)
+            {
+                acc_bal = 26100;
+                
+            }
+            if(acc_no==104)
+            {
+           
+                acc_bal = 80000;
+            }
+            if(acc_no==105)
+            {
+                acc_bal = 103400;
+            }
+        	if(money<=10000&&money>=100&&money<acc_bal)
+        	{
+        		acc_bal = acc_bal-money;
+        		System.out.println("successful");
+        		System.out.println("your current balance: "+acc_bal);
+        	}
+        	else
+        	{
+        		System.out.println("alert");
+        	}
+        	break;
+         default :
+         {
+        	 System.out.println("not valuable");
+         }
+        }
+        break;
+        }
+}
+ }
+}
